@@ -1,0 +1,14 @@
+Install Docker Desktop
+Sign in to Dockerhub and Docker Desktop
+Docker Desktop:
+> check docker install: cli -> "docker"
+> Pull the hello-world image and run it
+
+Steps:
+1. Assure that you're logged in: docker login
+2. Build docker image: docker bulld -t mlops-docker .
+3. Run the container: docker run -p 5000:5000 mlops-docker-demo
+4. Tag your image: docker tag mlops docker-demo imshivang03/mlops-docker:latest
+5. Push image to dockerhub: docker push imshivang03/mlops-docker:latest
+6. Pull image from dockerhub: docker pull imshivang03/mlops-docker:latest
+7. Run the pulled image: docker run -p 5000:5000 imshivang03/mlops-docker:latest
